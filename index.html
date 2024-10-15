@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ENTER>
+    <h1>Data Mahasiswa ITPLN</h1>
+    <form action="output.html">
+        <table>
+            <tr>
+                <td><label for="Nama">Nama</label></td>
+                <td><input type="text" name="nama" id="nama" required autofocus></td>
+            </tr>
+            <tr>
+                <td><label for="NIM">NIM </label></td>
+                <td><textarea name="NIM" id="NIM" cols="09" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan</label></td>
+                <td><select name="jurusan" id="jurusan">
+                    <option value="pilih jurusan">Pilih Jurusan</option>
+                    <option value="Informatika">T.Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Bisnis Energi">Bisnis Energi</option>
+                    <option value="Sipil">T.Sipil</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="Nomor">Nomor Telepon</label></td>
+                <td><input type="text" name="nomor" id="nomor" placeholder="Silahkan Masukan Nomor" pattern="[0-9]{12}" required title="Harus diisi 12 angka"></td>
+            </tr>
+            <tr>
+                <td><label for="TanggalMasuk">Tanggal Masuk</label></td>
+                <td><input type="date" name="TanggalMasuk" id="TanggalMasuk"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat </label></td>
+                <td><textarea name="alamat" id="alamat" cols="20" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="tempattinggal">Apakah Anda tinggal di rumah atau kos?</label></td>
+                <td><input type="text" name="tempattinggal" id="tempattinggal"></td>
+            </tr>
+            <tr>
+                <td><label for="angkatan">Angkatan berapa kamu?</label></td>
+                <td><input type="text" name="jumlah" id="angkatan"></td>
+            </tr>
+            <tr>
+                <td><label for="at">Apakah kamu adalah mahasiswa ikatan kerja?</label></td>
+                <td><input type="radio" name="at" id="at" value="ya"> <label for="ya">Ya</label></td>
+                <td><input type="radio" name="at" id="at" value="tidak"> <label for="tidak">Tidak</label></td>
+            </tr>
+            <tr>
+                <td><label for="ck">Silahkan tinggalkan pesan disini</label></td>
+                <td><input type="text" name="ck" id="ck" ></td>
+            </tr>
+        </table>
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
